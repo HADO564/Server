@@ -3,7 +3,8 @@ const express = require("express");
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
-router.post("/:id", validateUser);
+router.get("/:id", validateUser);
+router.post("/addAddress/:id", addAddress);//in case i decide to make an online app for registration of mac addresses
 router.get("/",reply);
 // console.log(prism);
 async function validateUser(req, res) {
@@ -29,6 +30,8 @@ async function validateUser(req, res) {
 
 }
 }
+
+
 
 async function reply(req,res){//testing function for routes
     res.send("Route is working");
