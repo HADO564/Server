@@ -31,7 +31,8 @@ async function validateUser(req, res) {
 }
 
 async function reply(req,res){//testing function for routes
-    res.send("Route is working);
+    res.send("Route is working");
 }
+
 
 module.exports = router;
