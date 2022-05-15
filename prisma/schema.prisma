@@ -8,6 +8,6 @@ datasource db {
 }
 
 model addresses {
-  mac_add String  @id @db.VarChar(15)
-  ip_add  String? @db.VarChar(16)
+  mac_add String  @id @db.VarChar(24)
+  ip_add  String? @db.VarChar(24)
 }
